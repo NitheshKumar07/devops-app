@@ -40,7 +40,7 @@ const Signin = () => {
 
         <p id="tagline">Streamline your workflow and track progress effortlessly with our-all-in one task management app.</p>
 
-        <div className="signBtn" onClick={googleSignIn}>
+        <div className={ !user ? "signBtn" : "signBtnNone"} onClick={googleSignIn}>
             <div>{googleSvg}</div>
             <p id="ctngoo">Continue with Google</p>
         </div>

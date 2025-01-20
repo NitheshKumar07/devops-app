@@ -142,6 +142,7 @@ const handleshowform = () => {
         selectedTasks.includes(task) ? {...task, status: newStatus} : task);
       setTasks(updatedTasks);
       setselectedTasks([]);
+      setshowBulkstatusList(false);
     };
 
     // checkbox toggle
