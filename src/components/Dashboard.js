@@ -437,7 +437,7 @@ const cancelTask = () => {
                </div>}
                 </div>
             <input type="date" id="duedateFilter" ref={dateInputRef} value={duedate} onChange={handleDateChange}/>
-            <div className="subSecDIV" onClick={handleLabelClick}>
+            <div className="subSecDIV disMOB" onClick={handleLabelClick}>
                 <label htmlFor="duedateFilter" id="dueTop">
                   {duedate ? duedate.toLocaleDateString() : "On date"}
                 </label>
@@ -472,7 +472,7 @@ const cancelTask = () => {
                 </div>}
                 </div>
                 <input type="date" id="duedateFilter" ref={dateInputRef} value={duedate} onChange={handleDateChange}/>
-               <div className="subSecDIV" onClick={handleLabelClick}>
+               <div className="subSecDIV disMOB" onClick={handleLabelClick}>
                 <label htmlFor="duedateFilter" id="dueTop">{duedate ? duedate.toLocaleDateString() : "On date"}</label>
                 </div>
                 <div id="clrFiltr" className={ duedate || filterCategory ? '' : 'cancelclrFiltr' }
