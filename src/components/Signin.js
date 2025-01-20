@@ -18,7 +18,6 @@ const Signin = () => {
         signInWithPopup(auth, provider)
         .then((result) => {
             const user = result.user;
-            console.log('User Info', user);
             
              // Extract the photoURL and handle missing value
              const photo = user.photoURL || "https://via.placeholder.com/100"; // Fallback to placeholder
