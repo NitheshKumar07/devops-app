@@ -4,7 +4,7 @@ import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyD7pTt126DUSITIRyG4xNnVmDH50wWAi7w",
-  authDomain: "taskbuddy-khaki.vercel.app",
+  authDomain: "taskbuddy-67332.firebaseapp.com",
   projectId: "taskbuddy-67332",
   storageBucket: "taskbuddy-67332.firebasestorage.app",
   messagingSenderId: "914929371404",
@@ -16,3 +16,4 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 export { auth };
+// taskbuddy-khaki.vercel.app

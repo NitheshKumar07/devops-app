@@ -89,10 +89,10 @@ body{
     #tagline{
         font-size: 90%;
         text-align: center;
-        width: 70%;
+        width: 80%;
     }
     .signBtn{
-        padding: 10px 5%
+        padding: 13px 5%
     }
 }
 /* .................................. ........................... dashboard*/
