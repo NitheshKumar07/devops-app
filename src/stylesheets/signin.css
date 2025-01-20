@@ -3,6 +3,7 @@
 }
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
 }
 .signContainer{
     display: flex;
@@ -11,7 +12,8 @@ body{
     width: 100%;
     height: 100vh;
     justify-content: center;
-    padding-left: 8%;
+    align-items: center;
+    text-align: center;
     user-select: none;
     background: url('../assests/wall.jpg') no-repeat left/cover;
 }
@@ -82,10 +84,6 @@ body{
     font-size: 100%;
 }
 @media screen and (max-width: 500px){
-    .signContainer{
-        align-items: center;
-        padding-left: 0%;
-    }
     #tagline{
         font-size: 90%;
         text-align: center;
@@ -138,6 +136,7 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    user-select: none;
 }
 .subSec2{
     display: flex;
@@ -374,24 +373,26 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: rgba(211, 211, 211, 0.233);
+    background-color: rgba(211, 211, 211, 0.404);
     margin-bottom: 1.5pc;
     padding-bottom: 1pc;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius:15px;
 }
 .section2Sub2, .prog2Sub2, .cmpltd2Sub2{
     height: 100%;
-    min-height:50vh;
+    min-height:40vh;
     overflow: auto;
 }
 .hidesection2Sub2, .hidesectionCMPLTD, .hidesectionprog{
-    height: 30px;
+    height: 40px;
     overflow: hidden;
 }
 
 #todoHead{
     --border-top-left-radius: 10px;
     --border-top-right-radius: 10px;
-    --padding: .3pc .8pc;
+    --padding: .7pc .8pc;
 
 
     border-top-right-radius: var(--border-top-right-radius);
@@ -400,6 +401,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 #Sec2catHead{
     font-weight: 700;
@@ -905,7 +907,8 @@ body{
     display: flex;
     flex-direction: column;
     gap: 3pc;
- }
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
  .boardTaskSEC{
     display: flex;
     justify-content: space-between;
@@ -937,7 +940,7 @@ body{
     font-size: 14px;
 }
 .nottask{
-    margin-top: 15%;
+    margin-top: 6%;
 }
 .renderDiv{
     height: 100%;
@@ -953,6 +956,10 @@ body{
 }
 #duedateFilter{
     display: none;
+}
+.mobilieLap{
+    user-select: none;
+    margin:.3pc 0 .6pc 0;
 }
 
 
@@ -1166,6 +1173,8 @@ body{
         left: 0;
         z-index: 100;
         padding:.7pc;
+        margin-top: 0pc;
+        margin-bottom: 0pc;
     }
     .search-addtask{
         display: flex;
@@ -1242,4 +1251,7 @@ body{
     .disMOB{
         display: none;
     }
+}
+.bar{
+    cursor: pointer;
 }

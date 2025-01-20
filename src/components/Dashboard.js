@@ -379,7 +379,7 @@ const cancelTask = () => {
 
 
 
-        <div className="sec1 mobilieProfile">
+        <div className="sec1 mobilieProfile mobilieLap">
             <div className="subSec1">
                 <div className="noteicondash">{noteSvg}</div>
                 <p id="dashTitle">TaskBuddy</p>
@@ -497,28 +497,28 @@ const cancelTask = () => {
           .length === 0 ? (
             <img className="searchImg" src={require('../assests/search.png')} alt="No tasks found" />
         ) : (<>
-        <div className={ iscollapsed.todo ? 'hidesection2Sub2' : "section2Sub2" }>
-            <div id="todoHead" className="todoHeadTo-Do">
-                <p id="Sec2catHead">{todoTaskCount.length > 0 ? `Todo (${todoTaskCount.length})` : 'Todo' }</p>
+        <div className={ iscollapsed.todo ? 'hidesection2Sub2' : "section2Sub2" } >
+            <div id="todoHead" className="todoHeadTo-Do"  onClick={()=>toggleCollapse('todo')}>
+                <p id="Sec2catHead"  >{todoTaskCount.length > 0 ? `Todo (${todoTaskCount.length})` : 'Todo' }</p>
                 <span className={ iscollapsed.todo ? 'todoArrowMove' : "todoArr" } onClick={()=>toggleCollapse('todo')}>&#10094;</span>
             </div>
             <div>{rendertheTasks('To-Do')}</div>
             </div>
 
-            <div className={ iscollapsed.inProgress ? 'hidesectionprog' : "prog2Sub2" }>
-            <div id="todoHead" className="todoHeadProgr">
-                <p id="Sec2catHead">{inProgressTaskCount.length > 0 ? `In-Progress (${inProgressTaskCount.length})` : 'In-Progress' }</p>
-                <span className={ iscollapsed.inProgress ? 'progArrowMove' : "todoArr" } onClick={()=>toggleCollapse('inProgress')}>&#10094;</span>
+            <div  className={ iscollapsed.inProgress ? 'hidesectionprog' : "prog2Sub2" }>
+            <div id="todoHead" className="todoHeadProgr" onClick={()=>toggleCollapse('inProgress')}>
+                <p id="Sec2catHead"  >{inProgressTaskCount.length > 0 ? `In-Progress (${inProgressTaskCount.length})` : 'In-Progress' }</p>
+                <span className={ iscollapsed.inProgress ? 'progArrowMove' : "todoArr" } >&#10094;</span>
             </div>
             <div>
               {rendertheTasks('In-Progress')}
               </div>
             </div>
 
-            <div className={ iscollapsed.Completed ? 'hidesectionCMPLTD' : "cmpltd2Sub2" }>
-            <div id="todoHead" className="todoHeadCmpltd">
-                <p id="Sec2catHead">{completedTaskCount.length > 0 ? `Completed (${completedTaskCount.length})` : 'Completed' }</p>
-                <span  className={ iscollapsed.Completed ? 'CmpltdArrowMove' : "todoArr" } onClick={()=>toggleCollapse('Completed')}>&#10094;</span>
+            <div className={ iscollapsed.Completed ? 'hidesectionCMPLTD' : "cmpltd2Sub2" } >
+            <div id="todoHead" className="todoHeadCmpltd" onClick={()=>toggleCollapse('Completed')}>
+                <p id="Sec2catHead" >{completedTaskCount.length > 0 ? `Completed (${completedTaskCount.length})` : 'Completed' }</p>
+                <span  className={ iscollapsed.Completed ? 'CmpltdArrowMove' : "todoArr" } >&#10094;</span>
             </div>
             <div>{rendertheTasks('Completed')}</div>
             </div>
@@ -533,9 +533,9 @@ const cancelTask = () => {
             </div>
 
           <div className= { iscollapsed.todo ? 'hidesection2Sub2' : "section2Sub2"}>
-            <div id="todoHead" className="todoHeadTo-Do">
-                <p id="Sec2catHead">{todoTaskCount.length > 0 ? `Todo (${todoTaskCount.length})` : 'Todo' }</p>
-                <span className={ iscollapsed.todo ? 'todoArrowMove' : "todoArr" } onClick={()=>toggleCollapse('todo')}>&#10094;</span>
+            <div id="todoHead" className="todoHeadTo-Do" onClick={()=>toggleCollapse('todo')}>
+                <p id="Sec2catHead"  >{todoTaskCount.length > 0 ? `Todo (${todoTaskCount.length})` : 'Todo' }</p>
+                <span className={ iscollapsed.todo ? 'todoArrowMove' : "todoArr" } >&#10094;</span>
             </div>
             
             <div className="plusAddCont">
@@ -570,20 +570,20 @@ const cancelTask = () => {
             {rendertheTasks('To-Do')}</div>
             </div>
 
-            <div className={ iscollapsed.inProgress ? 'hidesectionprog' : "prog2Sub2" }>
-            <div id="todoHead" className="todoHeadProgr">
-                <p id="Sec2catHead">{inProgressTaskCount.length > 0 ? `In-Progress (${inProgressTaskCount.length})` : 'In-Progress' }</p>
-                <span  className={ iscollapsed.inProgress ? 'progArrowMove' : "todoArr" } onClick={()=>toggleCollapse('inProgress')}>&#10094;</span>
+            <div className={ iscollapsed.inProgress ? 'hidesectionprog' : "prog2Sub2" } >
+            <div id="todoHead" className="todoHeadProgr" onClick={()=>toggleCollapse('inProgress')}>
+                <p id="Sec2catHead"  >{inProgressTaskCount.length > 0 ? `In-Progress (${inProgressTaskCount.length})` : 'In-Progress' }</p>
+                <span  className={ iscollapsed.inProgress ? 'progArrowMove' : "todoArr" } >&#10094;</span>
             </div>
             <div className="renderDiv">
               {rendertheTasks('In-Progress')}
               </div>
             </div>
 
-            <div className={ iscollapsed.Completed ? 'hidesectionCMPLTD' : "cmpltd2Sub2" }>
-            <div id="todoHead" className="todoHeadCmpltd">
-                <p id="Sec2catHead">{completedTaskCount.length > 0 ? `Completed (${completedTaskCount.length})` : 'Completed' }</p>
-                <span className={ iscollapsed.Completed ? 'CmpltdArrowMove' : "todoArr" } onClick={()=>toggleCollapse('Completed')}>&#10094;</span>
+            <div className={ iscollapsed.Completed ? 'hidesectionCMPLTD' : "cmpltd2Sub2" } >
+            <div id="todoHead" className="todoHeadCmpltd" onClick={()=>toggleCollapse('Completed')}>
+                <p id="Sec2catHead" >{completedTaskCount.length > 0 ? `Completed (${completedTaskCount.length})` : 'Completed' }</p>
+                <span className={ iscollapsed.Completed ? 'CmpltdArrowMove' : "todoArr" } >&#10094;</span>
             </div>
             <div className="renderDiv">
               {rendertheTasks('Completed')}
