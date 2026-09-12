@@ -11,7 +11,7 @@ First, clone the repository to your local machine using the command:
 
 '''bash
 
-git clone https://github.com/NitheshKumar07/Taskbuddy.git
+git clone https://github.com/NitheshKumar07/devops-app.git
 
 2. **Navigate to the project directory**
 
