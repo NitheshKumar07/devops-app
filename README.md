@@ -11,19 +11,24 @@ First, clone the repository to your local machine using the command:
 
 '''bash
 
-git clone https://github.com/NitheshKumar07/Taskbuddy.git
+git clone https://github.com/NitheshKumar07/devops-app.git
 
 2. **Navigate to the project directory**
 
-cd taskbuddy
+cd devops-app
 
-3. **Install Dependencies**
+3. **Build Image**
 
-npm install
+docker build -t taskbudy .
 
-4. **Run the Application**
+4. **Run the Container**
 
-npm start
+docker run -d -p 8080:80 --name taskbuddy-container taskbudy
+
+5. **Open the application**
+
+http://localhost:8080
+
 
 # **Features Implemented**
 
