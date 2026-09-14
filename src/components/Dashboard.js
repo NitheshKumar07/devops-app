@@ -378,9 +378,7 @@ const cancelTask = () => {
  </div>
 
 
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <div>V1.0</div>
-</div>
+
         <div className="sec1 mobilieProfile mobilieLap">
             <div className="subSec1">
                 <div className="noteicondash">{noteSvg}</div>

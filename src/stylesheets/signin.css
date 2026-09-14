@@ -77,14 +77,14 @@ body{
 .signBtn:hover{
     background-color: #262626e7;
 }
-#tagline{
+#tagline, .version{
     max-width: 30pc;
     color: #262626;
     font-weight: 500;
     font-size: 100%;
 }
 @media screen and (max-width: 500px){
-    #tagline{
+    #tagline, .version{
         font-size: 90%;
         text-align: center;
         width: 80%;

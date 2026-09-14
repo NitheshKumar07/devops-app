@@ -38,6 +38,7 @@ const Signin = () => {
             <p id="logoNam">TaskBuddy</p>
         </div>
 
+        <p id="version">V1.0</p>
         <p id="tagline">Streamline your workflow and track progress effortlessly with our-all-in one task management app.</p>
 
         <div className={ !user ? "signBtn" : "signBtnNone"} onClick={googleSignIn}>
