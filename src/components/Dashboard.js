@@ -378,7 +378,9 @@ const cancelTask = () => {
  </div>
 
 
-
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <div>V1.0</div>
+</div>
         <div className="sec1 mobilieProfile mobilieLap">
             <div className="subSec1">
                 <div className="noteicondash">{noteSvg}</div>
@@ -658,7 +660,6 @@ const cancelTask = () => {
 
 
     </div>
-    <p style="display: flex; justify-content: center; align-items: center; height: 100vh; color: black; font-weight: bold;">V1.0</p>
     </>)
 }
 export default Dashboard;
