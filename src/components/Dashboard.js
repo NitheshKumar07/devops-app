@@ -384,7 +384,6 @@ const cancelTask = () => {
                 <div className="noteicondash">{noteSvg}</div>
                 <p id="dashTitle">TaskBuddy</p>
             </div>
-            <p style="color: black; font-weight: bold;">V1.0</p>
             <div className="subSec1">
             {user && user.photoURL && user.displayName && (
   <>
